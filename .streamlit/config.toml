@@ -1,0 +1,47 @@
+[theme]
+font = "Arial Black"
+headingFont = "Arial Black"
+baseRadius = "8px"
+showWidgetBorder = true
+
+[theme.light]
+primaryColor = "#2563EB"
+backgroundColor = "#F4F6FA"
+secondaryBackgroundColor = "#F4F6FA"
+textColor = "#14213D"
+linkColor = "#2563EB"
+borderColor = "#475569"
+dataframeHeaderBackgroundColor = "#14213D"
+dataframeHeaderTextColor = "#F4F6FA"
+dataframeBorderColor = "#475569"
+
+[theme.light.sidebar]
+backgroundColor = "#F4F6FA"
+secondaryBackgroundColor = "#F4F6FA"
+textColor = "#14213D"
+primaryColor = "#2563EB"
+linkColor = "#2563EB"
+borderColor = "#475569"
+codeBackgroundColor = "#14213D"
+codeTextColor = "#F4F6FA"
+
+[theme.dark]
+primaryColor = "#2563EB"
+backgroundColor = "#14213D"
+secondaryBackgroundColor = "#475569"
+textColor = "#F4F6FA"
+linkColor = "#2563EB"
+borderColor = "#475569"
+dataframeHeaderBackgroundColor = "#475569"
+dataframeHeaderTextColor = "#F4F6FA"
+dataframeBorderColor = "#475569"
+
+[theme.dark.sidebar]
+backgroundColor = "#14213D"
+secondaryBackgroundColor = "#475569"
+textColor = "#F4F6FA"
+primaryColor = "#2563EB"
+linkColor = "#2563EB"
+borderColor = "#475569"
+codeBackgroundColor = "#475569"
+codeTextColor = "#F4F6FA"

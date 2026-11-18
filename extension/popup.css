@@ -1,0 +1,135 @@
+* { box-sizing: border-box; }
+
+:root {
+  color-scheme: dark;
+  --canvas: #1d1e24;
+  --surface: #202127;
+  --bar: #33343f;
+  --line: #454754;
+  --accent: #7394ed;
+  --text: #f0f1f5;
+  --muted: #b7bac5;
+  --danger: #ff938c;
+  --danger-soft: #422b30;
+  --caution: #f4c66b;
+  --caution-soft: #3d3628;
+  --safe: #70dca4;
+  --safe-soft: #263b34;
+}
+
+body {
+  width: 390px;
+  max-height: 640px;
+  margin: 0;
+  overflow-y: auto;
+  background: var(--surface);
+  color: var(--text);
+  font: 13px/1.45 "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  gap: 1px;
+  padding: 8px 12px;
+  background: var(--bar);
+  text-align: center;
+}
+
+header h1 { margin: 0; color: var(--accent); font-size: 15px; font-weight: 700; letter-spacing: .03em; }
+header p { margin: 0; color: var(--muted); font-size: 9px; letter-spacing: .12em; }
+button { color: inherit; cursor: pointer; font: inherit; }
+
+.status-area {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 18px 16px 16px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.status-area h2 { margin: 3px 0 2px; color: var(--accent); font-size: 14px; font-weight: 700; }
+.status { min-height: 17px; max-width: 340px; margin: 0; color: var(--muted); font-size: 11px; }
+.status.error { color: var(--danger); font-weight: 600; }
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--bar);
+}
+
+.tool {
+  display: grid;
+  min-height: 58px;
+  justify-items: center;
+  align-content: center;
+  gap: 3px;
+  border: 0;
+  border-right: 0;
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tool:last-child { border-right: 0; }
+.tool:hover { background: #3c3e4a; }
+.tool:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.tool svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.tool span { color: var(--muted); font-size: 10px; }
+
+.metrics {
+  display: grid;
+  gap: 1px;
+  padding: 7px 0;
+  background: var(--line);
+}
+
+.metrics article {
+  display: grid;
+  justify-items: center;
+  gap: 1px;
+  padding: 5px 8px;
+  background: var(--surface);
+}
+
+.metrics small { color: var(--accent); font-size: 13px; font-weight: 700; }
+.metrics span { color: var(--text); font-size: 16px; font-weight: 500; }
+#risky { color: var(--caution); }
+#high { color: var(--danger); }
+
+.list-section { padding: 12px 12px 8px; background: var(--surface); }
+.section-title { display: flex; align-items: center; justify-content: space-between; }
+.section-title h2 { margin: 0; color: var(--accent); font-size: 13px; font-weight: 700; }
+.history { display: grid; gap: 7px; max-height: 190px; margin-top: 8px; overflow-y: auto; }
+
+.email-card {
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: var(--bar);
+}
+
+.email-card:hover { background: #3c3e4a; }
+.email-card h3 { margin: 0 0 3px; overflow: hidden; font-size: 12px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.email-card p { margin: 2px 0; overflow: hidden; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+
+.badge {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: var(--line);
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.badge.risky, .badge.priority-high { background: var(--danger-soft); color: var(--danger); }
+.badge.caution, .badge.priority-normal { background: var(--caution-soft); color: var(--caution); }
+.badge.safe, .badge.priority-low, .badge.user-safe { background: var(--safe-soft); color: var(--safe); }
+.review-note { margin: 3px 0 0; color: var(--muted); font-size: 10px; }
+.empty { padding: 16px 12px; border-radius: 4px; background: var(--bar); color: var(--muted); font-size: 11px; text-align: center; }
+
+footer { padding: 8px 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; text-align: center; }

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRIAGE dashboard</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>TRIAGE</h1>
+      <p>LOCAL EMAIL CHECK</p>
+    </header>
+    <main>
+      <section class="status-area" aria-label="Current email analysis status">
+        <h2>Check current email</h2>
+        <p id="status" class="status" role="status">Checking the open email…</p>
+      </section>
+
+      <nav class="toolbar" aria-label="TRIAGE actions">
+        <button id="clear" class="tool" type="button" title="Clear local history">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M9 7V4h6v3m3 0-1 13H7L6 7m4 3v6m4-6v6"></path>
+          </svg>
+          <span>Clear history</span>
+        </button>
+      </nav>
+
+      <section class="metrics" aria-label="Email check summary">
+        <article><small>Emails checked</small><span id="count">0</span></article>
+        <article><small>Warnings</small><span id="risky">0</span></article>
+        <article><small>High priority</small><span id="high">0</span></article>
+      </section>
+
+      <section class="list-section">
+        <div class="section-title"><h2>Recent emails</h2></div>
+        <div id="history" class="history"></div>
+      </section>
+
+      <footer>Analyses stay in this browser. TRIAGE does not verify the sender or guarantee that a message is safe.</footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

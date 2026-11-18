@@ -1,0 +1,16 @@
+id,sender,subject,body,date,expected_threat,expected_priority,expected_topic
+T01,Examination Cell <exams@woxsen.edu.in>,Examination timetable - version A,"CS301 Data Structures - 12 Dec 2026\nMA201 Linear Algebra - 14 Dec 2026",2026-11-08 09:00,No warning signs found,Normal,Academics
+T02,Examination Cell <exams@woxsen.edu.in>,Revised examination timetable,"CS301 Data Structures - 15 Dec 2026\nMA201 Linear Algebra - 14 Dec 2026",2026-11-08 09:00,No warning signs found,Normal,Academics
+T03,Examination Office <examoffice@woxsen.edu.in>,Exam timetable - same date copy,"CS301 Data Structures - 12 Dec 2026\nMA201 Linear Algebra - 14 Dec 2026",2026-11-08 09:00,No warning signs found,Normal,Academics
+T04,Exam Section <examsection@gmail.com>,Urgent revised exam schedule,"The CS301 exam has been rescheduled to 18 Dec 2026. Review the timetable.",2026-11-08 09:00,Suspicious,High,Academics
+T05,Examination Cell <exams@woxsen.edu.in>,Mid-semester exam datesheet,"The mid-semester datesheet lists BI101 on 20 Dec 2026 and CS301 on 22 Dec 2026.",2026-11-08 09:00,No warning signs found,Normal,Academics
+T06,IT Helpdesk <alerts@woxsen.edu.in>,IT login security guide,"Our helpdesk shares a guide to account security and password managers. Never send your password or OTP by email.",2026-11-08 09:00,No warning signs found,Normal,Other
+T07,Club Events <events@woxsen.edu.in>,Updated workshop schedule,"The coding club workshop schedule has changed to 5 PM. Check the event page.",2026-11-08 09:00,No warning signs found,Normal,Clubs/Events
+T08,Hostel Warden <warden@woxsen.edu.in>,Room inspection schedule,"Hostel room inspections are scheduled for 12 Dec 2026. Please be present.",2026-11-08 09:00,No warning signs found,Normal,Hostel
+T09,Student Affairs <digest@woxsen.edu.in>,Weekly student digest,"This weekly digest includes the latest campus event schedule and club announcements. Unsubscribe any time.",2026-11-08 09:00,No warning signs found,Low,Clubs/Events
+T10,Registrar <registrar@woxsen.edu.in>,Administrative form submission,"Submit the signed scholarship form and required certificate to the office.",2026-11-08 09:00,No warning signs found,Normal,Administrative
+T11,Placement Cell <jobs@woxsen-edu.in>,Placement interview action required,"Your placement interview is tomorrow. Log in to the portal and confirm your slot.",2026-11-08 09:00,Suspicious,High,Internship/Placement
+T12,Examination Cell <exams@woxsen.edu.in>,Final exam schedule,"The final examination schedule is attached. Please review the published timetable.",2026-11-08 09:00,No warning signs found,Normal,Academics
+T13,Scholarship Office <scholarships@gmail.com>,Scholarship fee payment,"Send the scholarship processing fee of ₹700 by UPI immediately to receive your funds.",2026-11-08 09:00,Suspicious,High,Administrative
+T14,Accounts Office <accounts@woxsen.edu.in>,No action required - fee receipt,"Your fee receipt is available in the ERP portal for your records. No action is required.",2026-11-08 09:00,No warning signs found,Low,Administrative
+T15,Examination Cell <exams@woxsen.edu.in>,CS301 examination schedule update,"CS301 examination is scheduled for 12 Dec 2026. Confirm the date with the examination office if you see a different notice.",2026-11-08 09:00,No warning signs found,Normal,Academics
